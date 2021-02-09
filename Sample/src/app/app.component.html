@@ -1,0 +1,39 @@
+<div class="navBar">
+  <img class="navBarIcon" src="assets/angular-icon.svg" />
+</div>
+<div class="note">
+  <h2 class="note-header"> How it works</h2>
+  <li class="note-items">{{list1}}</li>
+  <li class="note-items">{{list2}}</li>
+  <li class="note-items">{{list3}}</li>
+</div>
+<form name="formID" class="formClass" (submit)="addMe()">
+  <input type="text" class="inputBoxStyle" placeholder="Frist Name" [(ngModel)]="firstname" name="firstname" />
+  <input type="text" class="inputBoxStyle" placeholder="Last Name" [(ngModel)]="lastname" name="lastname" />
+  <input type="text" class="inputBoxStyle" placeholder="Phone No." [(ngModel)]="phonenumber" name="phonenumber" />
+  <input type="submit" value="Add Me" />
+</form>
+
+<div class="submit-container">
+  <button class="submitClass" (click)="getUsers()">Get Users</button>
+</div>
+
+<table class="styled-table">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Phone No.</th>
+      <th>Delete Rec</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i of UsersData">
+      <td>{{i.first_name}}</td>
+      <td>{{i.last_name}}</td>
+      <td>{{i.phone}}</td>
+      <td><button (click)="deleteUser(i._id)" class="submitClass">Delete</button></td>
+    </tr>
+  </tbody>
+
+</table>

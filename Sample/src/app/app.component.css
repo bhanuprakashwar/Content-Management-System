@@ -1,0 +1,125 @@
+.navBar{
+    height:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #1976d2, #4098ef,#1976d2);
+}
+.navBarIcon{
+    width:50px;
+    height: 50px;
+}
+.note{
+    margin:30px auto;
+}
+.note-header{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #2e88e2;
+}
+.note-items{
+    font-size:14px;
+    font-family: sans-serif;
+    color: #646f7a;
+    padding: 5px 0px;
+}
+.formClass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    height: 20px;
+    width: 200px;
+    border:1px solid #eaeaea;
+    outline:none;
+}
+input:hover{
+    border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
+}
+input:focus{
+    border-color:#4d90fe;
+}
+
+input[type="submit"] {
+    border-radius: 2px;
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    color: #757575;
+    cursor: default;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100px;
+    padding: 0 16px;
+    height:36px;
+}
+input[type="submit"]:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+
+.submitClass{
+    border-radius: 2px;
+    background: #ddebf9;
+    border: 1px solid #f2f2f2;
+    color: #2e88e2;
+    cursor: default;
+    font-size: 14px;
+    font-weight: bold;
+    width: 110px;
+    padding: 0 16px;
+    height: 36px;
+}
+.submitClass:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background: #2e88e2;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #f8f8f8;
+}
+.submit-container{
+    display: flex;
+    justify-content: center;
+    margin:15px;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin:30px auto;
+}
+.styled-table thead tr {
+    background-color: #237fda;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #237fda;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
